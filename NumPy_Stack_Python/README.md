@@ -1,6 +1,9 @@
 # Python Exercise Codes for the following *Udemy* course 
 # ```Deep Learning Prerequisites: The Numpy Stack in Python```
 
+### Exercise 5
+Checking whether a matrix is *symmetric* or not using the **numpy** library. 
+
 ## Practice for *numpy* and *matplotlib* libraries.
 ### Exercise 6
 To generate and plot **XOR** dataset.
