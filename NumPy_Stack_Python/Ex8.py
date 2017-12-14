@@ -25,15 +25,15 @@ theta = (120 * np.pi / 180) * t     # Angle of the first spiral
 spiral = np.asarray(getCoordinates(r, theta)) + noise   # np.asarray() converts the input to an array
 spirals = spiral
 
-colors = np.full(NumPoints, fill_value = 'darkblue')
+colors = np.full(NumPoints, fill_value = 'blue')
 
 for i in range(1,6):
     newAngle = theta + i * np.pi / 3 # 60 degrees difference
     spirals = np.concatenate((spirals, np.asarray(getCoordinates(r, newAngle)) + noise), axis=1)
     if i % 2 == 1:
-        colors = np.append(colors, np.full(NumPoints, fill_value = 'darkred'))
+        colors = np.append(colors, np.full(NumPoints, fill_value = 'red'))
     else:
-        colors = np.append(colors, np.full(NumPoints, fill_value = 'darkblue'))
+        colors = np.append(colors, np.full(NumPoints, fill_value = 'blue'))
 
 
 plt.scatter(spirals[0,:],spirals[1,:], c = colors, alpha = 0.5)
