@@ -1,4 +1,4 @@
-# Coding Softmax
+# NN Forward Propagation (only the PREDICTION part)
 import numpy as np
 import matplotlib.pyplot as plt
 
